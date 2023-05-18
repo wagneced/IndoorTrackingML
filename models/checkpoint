@@ -1,0 +1,2 @@
+model_checkpoint_path: "F3499FDED02E_Kalman_RNN_Final.ckpt"
+all_model_checkpoint_paths: "F3499FDED02E_Kalman_RNN_Final.ckpt"
