@@ -1,5 +1,3 @@
-
-models/E06B09BAC79F_Kalman_RNN_Final.ckpt.data-00000-of-00001
 models/*.data-00000-of-00001
 models/*.ckpt.index
 logs/*
