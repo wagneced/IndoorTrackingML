@@ -53,6 +53,8 @@ As the project used freeware and mongodb is limited to 500 communications by day
 Hook.ubeac.io was used as endpoint to collect the gateway data and export it as json file.
 (https://hook.ubeac.io/)
 Hook.ubeac.io has no limits on number of communications but depending of numbers of bluethooth traffic the new data overwrites the old data. In my project it has overwritten data after 7 or 15 minutes (depending if tv box was activated)
+The json files have to be placed in "\IndoorTrackingML\DATA\JSON" (if path to json file is not changed in code)
+The set path which points to this location is set in the capter where the json files are transformed to a csv file.
 
 The caption "Neues Datenset erstellen (Optional)" contains all logic to transform a json file to the required csv file. Important a CSV-File "LabelHelper.csv" is required at "\IndoorTrackingML\DATA\" it has to contain the tags of the room and the timestamp, so that the new data can be labled / allocated to the room.
 "SpecificTag" can be ignored in the LabelHelper.csv as with the setup of the project a specific allocation in the room can not be done as it is not possible with a single distance value wihtout any further informations.
