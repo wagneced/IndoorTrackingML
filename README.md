@@ -4,6 +4,7 @@ This project should add to the existing projects of bkuehnis and support his sol
 
 (Setup description etc are further below after findings section)
 ==========================Findings==========================
+
 Beacon Modell reccomended: Axaet PC061
 Weighted F1-Score for approches:
 Testdataset (Open Doors) | Testdataset (Closed Doors)
@@ -26,15 +27,15 @@ RF:		0.9214 (MMedian)	| 0.9846 (Wiener)
 XG-Boost:	0.9238 (MMean)	| 0.9908 (Wiener or Kalman)
 RNN (LSTM):	0.9499 (Wiener)	| 0.9999 (Raw or Kalman)
 
-Final Modell reccomendation based on average performance on open and closed doors data:
+Final Modell recommendation based on average performance on open and closed doors data:
 Gateway E06B09BAC79F (Room 1):
 RNN (LSTM) with Signalfilter MMean -> Weighted F1-Score: 0.9306
 Gateway F3499FDED02E (Room 2):
 RNN (LSTM) without Signalfilter (Raw-Data) -> Weighted F1-Score: 0.9731
+
 ============================================================
 
-
-How to setup the project / code:
+## Setup project
 The python notebook is developed on google colabs.
 As the path are relativ to the google drive directory it is recommended to copy the whole project to own google dirve directory and launch the python notebook with google colabs.
 Otherwise the root_path variable has to be adapted and mount of google drive has to be deactivated (in the first lines of code)
